@@ -17,13 +17,4 @@ async def on_ready():
     for command in commands:
         bot.load_extension(command)
 
-
-# @bot.listen("on_message")
-# async def on_mention_reply_prefix(message: discord.Message) -> None:
-#     """Replies the bot's prefix when mentioned"""
-#     if bot.user.mentioned_in(message):
-#         await message.channel.send(f"** Prefix is `{bot.command_prefix}`.**"
-#                                    )
-
-
 bot.run(TOKEN)
