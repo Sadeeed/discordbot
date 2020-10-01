@@ -4,3 +4,4 @@ token.txt
 /plugins/commands/
 /.vscode
 /plugins/__pycache__
+/__pycache__

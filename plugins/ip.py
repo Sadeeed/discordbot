@@ -1,5 +1,8 @@
 from discord.ext import commands
 import discord
+import main as m
+
+config = m.readConfig()
 
 
 @commands.command(
@@ -16,15 +19,15 @@ async def ip(ctx):
 
     ipEmbed.add_field(
         name="Survival",
-        value="survival.ebrius.xyz",
+        value=config['survivalIP'],
         inline=False)
     ipEmbed.add_field(
         name="Creative",
-        value="creative.ebrius.xyz",
+        value=config['creativeIP'],
         inline=False)
     ipEmbed.add_field(
         name="Events",
-        value="jefflurr.beastmc.com",
+        value=config['eventsIP'],
         inline=False)
 
     await ctx.send(embed=ipEmbed)

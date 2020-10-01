@@ -1,8 +1,18 @@
 from discord.ext.commands import Bot
 import os
+import json
+
+
+def readConfig():
+    with open("config.json") as f:
+        config = json.load(f)
+    return config
+
+
+config = readConfig()
 
 # client = discord.Client()
-bot = Bot(command_prefix=">")
+bot = Bot(command_prefix=config["commandPrefix"])
 
 with open("token.txt") as fp:
     TOKEN = fp.read()

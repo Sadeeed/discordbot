@@ -1,5 +1,8 @@
 {
     "commandPrefix": ">",
     "redditThread": "",
-    "mcForums":""
+    "mcForums":"",
+    "survivalIP":"survival.ebrius.xyz",
+    "creativeIP":"creative.ebrius.xyz",
+    "eventsIP":"jefflurr.beastmc.com"
 }
